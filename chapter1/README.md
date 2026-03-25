@@ -1,10 +1,14 @@
-# Chapter 1 – Variables and Basic Data Types
+# Python Course – Basic Level
 
-## Contents
-- `chapter1_notes_en.pdf` – Lecture notes in English (PDF)
-- `chapter1_core.ipynb` – Main Google Colab notebook
-- `examples/` – Field-specific example notebooks
+Welcome! This is the course repository for the basic Python programming course.
 
-## How to open notebooks in Google Colab
-1. Click on the `.ipynb` file in this folder.
-2. Click the **Open in Colab** button at the top of the page.
+## Course Structure
+
+| Chapter | Topic | Notes | Colab |
+|---------|-------|-------|-------|
+| [Chapter 1](./chapter1/) | Variables & Data Types | [PDF](./chapter1/chapter1_notes_en.pdf) | [Open](./chapter1/chapter1_core.ipynb) |
+
+## How to use this course
+1. Download the PDF notes.
+2. Open the Colab notebook to practice code.
+3. Check the `examples/` folder for your field-specific exercises.
