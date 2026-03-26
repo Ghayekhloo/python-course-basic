@@ -21,9 +21,9 @@ Welcome! This is the course repository for the basic Python programming course.
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ghayekhloo/python-course-basic/blob/main/chapter3/example/python_notebook_3_lists_loops_while_practice.ipynb) |
 
 
-| [Chapter 4](./chapter4/) | Variables & Data Types | [📄 Download PDF](https://github.com/Ghayekhloo/python-course-basic/raw/main/chapter1/Python_Chapter_One.pdf) |
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ghayekhloo/python-course-basic/blob/main/chapter1/chapter1_core.ipynb) | 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ghayekhloo/python-course-basic/blob/main/chapter1/examples/python_basics_major-samples-1.ipynb) |
+| [Chapter 4](./chapter4/) | Variables & Data Types | [📄 Download PDF](https://github.com/Ghayekhloo/python-course-basic/raw/main/chapter4/chapter_4.pdf) |
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ghayekhloo/python-course-basic/blob/main/chapter4/chapter_4.ipynb) | 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ghayekhloo/python-course-basic/blob/main/chapter4/exampels/Python_functions_major_4.ipynb.ipynb) |
 
 
 
