@@ -1,0 +1,235 @@
+
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "# Python Notebook 2: `if`, `elif`, `else` with Real Student-Major Examples\n\nThis notebook continues the first notebook on:\n- variables\n- basic data types\n- strings\n- numbers\n- booleans\n- comparison operators\n- logical operators\n- user input\n\nNow we use all of those ideas to write decision-making programs with:\n- `if`\n- `elif`\n- `else`\n- nested conditions\n- multiple conditions with `and`, `or`, and `not`\n\nThe examples are based on your students' academic fields.\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 1. What is `if / elif / else`?\n\nIn Python, we use conditional statements to make decisions.\n\n### Basic structure\n```python\nif condition:\n    # code\nelif another_condition:\n    # code\nelse:\n    # code\n```\n\nPython checks conditions from top to bottom:\n1. If the first condition is `True`, that block runs.\n2. If not, Python checks the `elif` condition.\n3. If none of the conditions are `True`, the `else` block runs.\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "# Simple example\nscore = 82\n\nif score >= 90:\n    print(\"Excellent\")\nelif score >= 75:\n    print(\"Good job\")\nelse:\n    print(\"Keep practicing\")\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 2. Quick Review from Notebook 1\n\nBefore using conditions, we often need:\n- variables\n- strings\n- integers and floats\n- booleans\n- comparison operators\n- logical operators\n\nLet us review them with a student example.\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "student_name = \"Lina\"\nmajor = \"Marine ecology\"\nage = 21\ngpa = 3.6\nis_full_time = True\n\nprint(type(student_name))\nprint(type(major))\nprint(type(age))\nprint(type(gpa))\nprint(type(is_full_time))\n\nprint(age > 18)\nprint(gpa >= 3.5)\nprint(is_full_time and gpa >= 3.5)\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 3. String Examples Using Student Majors\n\nStrings are very useful in conditional statements because we can compare text.\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "majors = ['Supply chain management', 'Communication Design', 'Marine ecology', 'Electronics Engineering', 'Biodiversity', 'Mechanical engineer', 'Vegetation science', 'Mechanical Engineering', 'ecological Modeling', 'Mechanical manufacturing management and aerospace innovation']\n\nfor m in majors:\n    print(\"Major:\", m)\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "# String comparison\nmajor = \"Communication Design\"\n\nif major == \"Communication Design\":\n    print(\"This student may work on branding, visual storytelling, and digital media.\")\nelse:\n    print(\"This is a different major.\")\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "# f-string with a major\nstudent_name = \"Daniel\"\nmajor = \"Electronics Engineering\"\nprint(f\"{student_name} is studying {major}.\")\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 4. Example: Advice by Major\n\nNow we use `if / elif / else` to print different messages for different academic fields.\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Marine ecology\"\n\nif major == \"Supply chain management\":\n    print(\"Focus on logistics, inventory, and global operations.\")\nelif major == \"Communication Design\":\n    print(\"Focus on visual identity, typography, and user-centered communication.\")\nelif major == \"Marine ecology\":\n    print(\"Focus on ocean ecosystems, species interaction, and environmental monitoring.\")\nelif major == \"Electronics Engineering\":\n    print(\"Focus on circuits, sensors, and embedded systems.\")\nelse:\n    print(\"This major has its own unique learning path.\")\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 5. Multiple Mechanical Engineering Cases\n\nSome students have similar majors.\nWe can use logical operators to group related fields.\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Mechanical manufacturing management and aerospace innovation\"\n\nif major == \"Mechanical Engineering\" or major == \"Mechanical engineer\" or major == \"mechanical engineer\":\n    print(\"This student studies machines, motion, energy, and design.\")\nelif major == \"Mechanical manufacturing management and aerospace innovation\":\n    print(\"This student combines manufacturing, innovation, and aerospace systems.\")\nelse:\n    print(\"This is another field.\")\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 6. Using `in` for Cleaner Conditions\n\nSometimes several majors belong to the same broad category.\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Biodiversity\"\n\nlife_science_majors = [\"Marine ecology\", \"Biodiversity\", \"Vegetation science\", \"ecological Modeling\"]\nengineering_majors = [\"Electronics Engineering\", \"Mechanical Engineering\", \"Mechanical engineer\", \"mechanical engineer\"]\n\nif major in life_science_majors:\n    print(\"This major belongs to environmental or life sciences.\")\nelif major in engineering_majors:\n    print(\"This major belongs to engineering.\")\nelse:\n    print(\"This major belongs to another category.\")\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 7. GPA + Major + Status\n\nHere we combine:\n- strings\n- float\n- boolean\n- logical operators\n- conditional statements\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "student_name = \"Nora\"\nmajor = \"Supply chain management\"\ngpa = 3.8\nis_full_time = True\n\nif major == \"Supply chain management\" and gpa >= 3.5 and is_full_time:\n    print(f\"{student_name} is an excellent candidate for logistics and operations internships.\")\nelif major == \"Supply chain management\" and gpa >= 3.0:\n    print(f\"{student_name} is doing well and should continue building analytical skills.\")\nelse:\n    print(f\"{student_name} should focus on improving academic performance and practical experience.\")\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 8. Nested `if` Example\n\nA nested `if` means an `if` statement inside another `if` statement.\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Electronics Engineering\"\ngpa = 3.7\n\nif major == \"Electronics Engineering\":\n    print(\"Major accepted.\")\n\n    if gpa >= 3.5:\n        print(\"Eligible for advanced electronics lab work.\")\n    else:\n        print(\"Build stronger fundamentals before advanced lab work.\")\nelse:\n    print(\"This example is only for Electronics Engineering students.\")\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 9. Rich Examples for Each Major\n\nThese examples are more realistic and more interesting for students.\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Supply chain management\"\nproject_score = 88\npresentation_score = 72\n\nif major == \"Supply chain management\":\n    if project_score >= 85 and presentation_score >= 70:\n        print(\"Excellent: ready for case studies in logistics optimization.\")\n    elif project_score >= 70:\n        print(\"Good progress: improve communication and reporting skills.\")\n    else:\n        print(\"Needs more work on planning and data interpretation.\")\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Communication Design\"\nportfolio_ready = True\nsoftware_skill = \"high\"\n\nif major == \"Communication Design\":\n    if portfolio_ready and software_skill == \"high\":\n        print(\"Ready for branding, UI, and digital campaign projects.\")\n    elif portfolio_ready:\n        print(\"Good creative direction. Improve technical design tools.\")\n    else:\n        print(\"Start building a strong visual portfolio.\")\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Marine ecology\"\nfieldwork_hours = 45\ndata_analysis_skill = True\n\nif major == \"Marine ecology\":\n    if fieldwork_hours >= 40 and data_analysis_skill:\n        print(\"Excellent preparation for marine research projects.\")\n    elif fieldwork_hours >= 20:\n        print(\"Good start. Add more ecology data analysis practice.\")\n    else:\n        print(\"Gain more fieldwork experience.\")\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Electronics Engineering\"\nlab_score = 91\ncoding_skill = True\n\nif major == \"Electronics Engineering\":\n    if lab_score >= 90 and coding_skill:\n        print(\"Excellent profile for embedded systems and smart devices.\")\n    elif lab_score >= 75:\n        print(\"Strong technical base. Keep improving programming.\")\n    else:\n        print(\"Review core electronics concepts and lab practice.\")\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Biodiversity\"\nspecies_report = 93\nteamwork = True\n\nif major == \"Biodiversity\":\n    if species_report >= 90 and teamwork:\n        print(\"Excellent candidate for biodiversity conservation projects.\")\n    elif species_report >= 75:\n        print(\"Good scientific understanding. Strengthen collaboration skills.\")\n    else:\n        print(\"Practice observation, reporting, and ecological interpretation.\")\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Vegetation science\"\nplant_id_score = 81\ngis_skill = False\n\nif major == \"Vegetation science\":\n    if plant_id_score >= 80 and gis_skill:\n        print(\"Ready for vegetation mapping and environmental analysis.\")\n    elif plant_id_score >= 80:\n        print(\"Strong plant knowledge. Learning GIS will make your profile stronger.\")\n    else:\n        print(\"Review plant classification and field observation methods.\")\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Mechanical Engineering\"\nmath_score = 89\ndesign_skill = True\n\nif major == \"Mechanical Engineering\":\n    if math_score >= 85 and design_skill:\n        print(\"Excellent for mechanics, CAD, and system design.\")\n    elif math_score >= 70:\n        print(\"Good progress. Keep developing design and simulation skills.\")\n    else:\n        print(\"Strengthen mathematics and engineering problem solving.\")\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"ecological Modeling\"\npython_skill = True\nstatistics_score = 84\n\nif major == \"ecological Modeling\":\n    if python_skill and statistics_score >= 80:\n        print(\"Excellent profile for ecosystem simulation and predictive modeling.\")\n    elif statistics_score >= 70:\n        print(\"Good foundation. Improve coding for stronger modeling work.\")\n    else:\n        print(\"Review statistics and computational thinking.\")\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "major = \"Mechanical manufacturing management and aerospace innovation\"\ninnovation_score = 92\nteam_project = True\n\nif major == \"Mechanical manufacturing management and aerospace innovation\":\n    if innovation_score >= 90 and team_project:\n        print(\"Excellent fit for aerospace design and manufacturing innovation.\")\n    elif innovation_score >= 75:\n        print(\"Strong ideas. Improve teamwork and technical planning.\")\n    else:\n        print(\"Build stronger engineering innovation and project management skills.\")\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 10. User Input Example\n\nNow the user enters data.\nThis makes the notebook more interactive in Google Colab.\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "name = input(\"Enter student name: \")\nmajor = input(\"Enter major: \")\ngpa = float(input(\"Enter GPA: \"))\n\nif gpa >= 3.7:\n    print(f\"{name} from {major} is an outstanding student.\")\nelif gpa >= 3.0:\n    print(f\"{name} from {major} is doing well.\")\nelse:\n    print(f\"{name} from {major} should spend more time practicing.\")\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 11. Final Comprehensive Example\n\nThis example combines:\n- strings\n- numbers\n- booleans\n- comparison operators\n- logical operators\n- `if / elif / else`\n- nested decision-making\n"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "source": "name = input(\"Student name: \")\nmajor = input(\"Major: \")\ngpa = float(input(\"GPA: \"))\nhas_project = input(\"Completed project? (yes/no): \").lower() == \"yes\"\nenglish_level = input(\"English level (high/medium/low): \").lower()\n\nlife_science_majors = [\"Marine ecology\", \"Biodiversity\", \"Vegetation science\", \"ecological Modeling\"]\nengineering_majors = [\"Electronics Engineering\", \"Mechanical Engineering\", \"Mechanical engineer\", \"mechanical engineer\"]\ndesign_business_majors = [\"Communication Design\", \"Supply chain management\", \"Mechanical manufacturing management and aerospace innovation\"]\n\nif major in life_science_majors:\n    if gpa >= 3.5 and has_project:\n        print(f\"{name} is well prepared for environmental research opportunities.\")\n    elif gpa >= 3.0:\n        print(f\"{name} has a good foundation in {major}.\")\n    else:\n        print(f\"{name} should strengthen research and data analysis skills.\")\nelif major in engineering_majors:\n    if gpa >= 3.5 and english_level == \"high\":\n        print(f\"{name} is a strong candidate for technical projects and international collaboration.\")\n    elif gpa >= 3.0:\n        print(f\"{name} is progressing well in {major}.\")\n    else:\n        print(f\"{name} should improve both technical fundamentals and practice.\")\nelif major in design_business_majors:\n    if has_project and english_level in [\"high\", \"medium\"]:\n        print(f\"{name} is ready for presentations, teamwork, and applied projects in {major}.\")\n    elif gpa >= 3.0:\n        print(f\"{name} has potential and should keep building professional skills.\")\n    else:\n        print(f\"{name} should improve both academic confidence and project experience.\")\nelse:\n    print(f\"{name} is in a unique field. Build your strengths step by step.\")\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 12. Practice Tasks for Students\n\nTry these tasks:\n1. Change the major and test a different condition.\n2. Add a new major and write a new `elif` block.\n3. Ask the user for more information, such as age or project score.\n4. Use `and` and `or` in the same condition.\n5. Build your own academic advisor program.\n"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": "## 13. Summary\n\nIn this notebook, students learned how to:\n- write `if`, `elif`, and `else`\n- compare values\n- combine conditions with `and`, `or`, and `not`\n- work with strings, numbers, and booleans\n- build interactive academic examples using real majors\n\nThis notebook is ready for Google Colab and GitHub.\n"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python",
+      "version": "3.11"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
