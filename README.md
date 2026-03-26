@@ -1,14 +1,16 @@
 # python-course-basic
-# Chapter 1 – Variables and Basic Data Types
+# Python Course – Basic Level
 
-## Contents
-- `chapter1_notes_en.pdf` – Lecture notes in English (PDF)
-- `chapter1_core.ipynb` – Main Google Colab notebook
-- `examples/` – Field-specific example notebooks
+Welcome! This is the course repository for the basic Python programming course.
 
-## How to open notebooks in Google Colab
-1. Click on the `.ipynb` file in this folder.
-2. Click the **Open in Colab** button at the top of the page.
+## Course Structure
 
+| Chapter | Topic | Notes | Colab |
+|---------|-------|-------|-------|
+| [Chapter 1](./chapter1/) | Variables & Data Types | [📄 Download PDF](https://github.com/Ghayekhloo/python-course-basic/raw/main/chapter1/Python_Chapter_One.pdf) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ghayekhloo/python-course-basic/blob/main/chapter1/chapter1_core.ipynb) |
 
-| [Chapter 2](./chapter2/) | if / elif / else | [📄 Download PDF](https://github.com/Ghayekhloo/python-course-basic/raw/main/chapter2/chapter2_notes_en.pdf) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ghayekhloo/python-course-basic/blob/main/chapter2/chapter2_core.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ghayekhloo/python-course-basic/blob/main/chapter2/examples/chapter2_major_samples.ipynb) |
+## How to use this course
+1. Download the PDF notes.
+2. Open the Colab notebook to practice code.
+3. Check the `examples/` folder for your field-specific exercises.
+4. 
