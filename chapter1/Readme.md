@@ -22,7 +22,3 @@
 
 ⬅️ [Back to Main Course](../README.md)
 
-## Download & Open
-
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ghayekhloo/python-course-basic/blob/main/chapter1/examples/python_basics_major_samples_1.ipynb) |
